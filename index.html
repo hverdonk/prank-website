@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy April Fools!</title>
+    <meta
+      name="description"
+      content="An obvious April Fools parody page with a chaotic White House clown image."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Secret service arrests Mike Pence on the White House lawn for attempted aggravated assault" />
+    <meta
+      property="og:description"
+      content="This is parody, not news. Click for the extremely serious update."
+    />
+    <meta property="og:image" content="./images/prank-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Secret service arrests Mike Pence on the White House lawn for attempted aggravated assault" />
+    <meta
+      name="twitter:description"
+      content="This is parody, not news. Click for the extremely serious update."
+    />
+    <meta name="twitter:image" content="./images/prank-image.jpg" />
+    <style>
+      :root {
+        --bg-1: #f9f3d2;
+        --bg-2: #f4b942;
+        --bg-3: #e85d04;
+        --text: #1d1d1d;
+        --card: rgba(255, 252, 244, 0.86);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        font-family: Georgia, "Times New Roman", serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top left, rgba(255, 255, 255, 0.9), transparent 28%),
+          radial-gradient(circle at bottom right, rgba(255, 214, 102, 0.65), transparent 32%),
+          linear-gradient(135deg, var(--bg-1), var(--bg-2) 52%, var(--bg-3));
+      }
+
+      main {
+        width: min(920px, calc(100vw - 2rem));
+        padding: 2.5rem 1.25rem;
+      }
+
+      .card {
+        padding: 2rem;
+        border-radius: 28px;
+        background: var(--card);
+        box-shadow: 0 24px 60px rgba(83, 35, 5, 0.22);
+        backdrop-filter: blur(10px);
+      }
+
+      h1 {
+        margin: 0 0 1.5rem;
+        text-align: center;
+        font-size: clamp(3rem, 11vw, 6rem);
+        line-height: 0.95;
+        letter-spacing: -0.04em;
+        text-transform: uppercase;
+      }
+
+      .frame {
+        overflow: hidden;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.6);
+      }
+
+      .frame img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .note {
+        margin: 1rem 0 0;
+        text-align: center;
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="card">
+        <h1>Happy April Fools!</h1>
+        <div class="frame">
+          <img
+            src="./images/clowns.png"
+            alt="A parody image of clowns gathered on the White House lawn"
+          />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
